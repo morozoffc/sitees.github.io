@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #FF8C00;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #FF4500;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 60px 10px 20px;
+  margin-top: 50px;
+}
+
+.grid-item {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.grid-item img {
+  max-width: 100%; /* Делает изображение адаптивным */
+  height: auto; /* Сохраняет пропорции изображения */
+}
+
+#home {
+  grid-column: 1 / -1;
+}
+
+#news, #contact, #search, #about, #heh, #haah {
+  grid-column: span 2;
+}
+
+.cent{
+ text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#news">Курица</a>
+  <a href="#contact">Свинина</a>
+  <a href="#search">Баранина</a>
+  <a href="#about">Говядина</a>
+  <a href="#heh">Курица (хот)</a>
+  <a href="#haah">Свинина (хот)</a>
+  <div class="topnav-right">
+	<a>271-008</a>
+  </div>
+</div>
+
+<div class="main">
+  <div id="home" class="grid-item">
+    <h1 class="cent">Шаурма "У дома"</h1>
+    
+    <p class="cent">Описание раздела Home...Заказать ПИЦЦУ, ХАЧАПУРИ, ЛАМАДЖО, ЦЕЗАРЬ вы можете ежедневно КРУГЛОСУТОЧНО! Воскресенье и понедельник отсек работает с 9.00-00.00!  
+
+УВАЖАЕМЫЕ КЛИЕНТЫ, у нас изменились условия доставки. Просим Вас, перед оформлением заказа обязательно ознакомиться с новыми условиями в разделе Доставка. Итоговая сумма доставки озвучивается оператором при подтверждении заказа! Благодарим за понимание.</p>
+  <br/><h1 class="cent">↓ Меню ↓</h1>
+  </div>
+  <div id="news" class="grid-item">
+    <h2 class="cent">Курица</h2>
+    <img src="images/shaurma11.jpg" alt="Описание изображения">
+    <p class="cent">Вкусное сочетание сочного мяса, свежих овощей и ароматных специй.</p>
+  </div>
+  <div id="contact" class="grid-item">
+    <h2 class="cent">Свинина</h2>
+    <img src="images/shaurma22.jpg" alt="Описание изображения">
+    <p class="cent">Сочная шаурма, обжаренная до золотистой корочки, с изобилием начинки.</p>
+  </div>
+  <div id="search" class="grid-item">
+    <h2 class="cent">Баранина</h2>
+    <img src="images/shaurma33.jpg" alt="Описание изображения">
+    <p class="cent">Шаурма, полная хрустящего мяса, хрустящих овощей и аппетитных соусов.</p>
+  </div>
+  <div id="about" class="grid-item">
+    <h2 class="cent">Говядина</h2>
+    <img src="images/shaurma44.jpg" alt="Описание изображения">
+    <p class="cent">Сочная классическая шаурма с сочным мясом, свежими овощами и ароматными специями.</p>
+  </div>
+  <div id="heh" class="grid-item">
+    <h2 class="cent">Курица (хот)</h2>
+    <img src="images/shaurma55.jpg" alt="Описание изображения">
+    <p class="cent">Шаурма, приготовленная на открытом огне, со смесью ароматных специй.</p>
+  </div>
+  <div id="haah" class="grid-item">
+    <h2 class="cent">Свинина (хот)</h2>
+    <img src="images/shaurma66.jpg" alt="Описание изображения">
+    <p class="cent">Шаурма, обжаренная по-настоящему насыщенным мясным вкусом и пикантными соусами.</p>
+  </div>
+</div>
+
+</body>
+</html>
